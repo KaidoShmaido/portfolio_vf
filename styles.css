@@ -127,7 +127,7 @@ nav{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 100px;
 }
 
 .about-me span{
@@ -172,8 +172,106 @@ color: #DAA25A;
     margin-left: 30%;
 }
 
+.skills {
+    
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.skills span{
+    color: #DAA25A;
+}
+
+.skills h1 {
+    font-size:40px ;
+    margin-bottom: 120px;
+}
 
 
+.skills-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.skill-category {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(3, 1, 1, 0.301);
+    padding: 20px;
+}
+
+.skill-category:hover{
+    box-shadow: 0 2px 10px rgba(3, 1, 1, 0.726);
+    transition: all .3s ease;
+}
+
+.skill-category h3 {
+    font-size: 1.5em;
+    color: #DAA25A;
+    margin-bottom: 10px;
+}
+
+.skill-category ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skill-category li {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.skill-category span {
+    font-weight: bold;
+    color: #DAA25A;
+}
+
+.form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group{
+    margin-bottom: 15px;
+
+}
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.form-group button {
+    padding: 10px 15px;
+    background-color: #DAA25A;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.form-group button:hover {
+    background-color: #4cae4c;
+}
 /*responsive*/
 @media (max-width:700px) {
     .text-box h1{
@@ -210,6 +308,17 @@ color: #DAA25A;
     }
     .nav-links ul {
         padding: 30px;
+    }
+    .row p{
+        width: 100%;
+        text-align: center;
+    }
+    .row {
+        grid-template-columns: 1fr;
+
+    }
+    .row img{
+        display: none;
     }
 }
 
