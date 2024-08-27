@@ -22,8 +22,8 @@
                     <li><a href="index.html"> Home</a></li>
                     <li><a href="#about-me"> About</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#work">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
              </div>
              <span class="material-symbols-outlined" onclick="showMenu()">
@@ -95,9 +95,41 @@
     </section>
 
 
+    
+<section class="work" id="work">
+    <h1>My <span>Work</span></h1>
+      <div class="work-grid">
+            <div class="project">
+                <img src="/images/project1.jpg" alt="">
+                <div class="layer">
+                    <h3>project 1</h3>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="/images/project.jpg" alt="">
+                <div class="layer">
+                    <h3>project 2</h3>
+                </div>
+            </div>
+
+            <div class="project">
+                <img src="/images/project3.jpg" alt="">
+                  <div class="layer">
+                    <h3>project 3</h3>
+                  </div>
+            </div>
+      </div>
+
+</section>
+
+<section id="contact" class="contact">
+
     <div class="form-container">
-        <h2>Contact <span>US</span></h2>
-        <form action="" method="POST">
+        <h1>Contact <span>US</span></h1>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="ace007d2-9811-436c-a6de-6065aecf9281">
+
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -119,6 +151,9 @@
             </div>
         </form>
     </div>
+</section>
+
+
 
 
 
